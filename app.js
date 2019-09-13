@@ -1,7 +1,11 @@
 const express = require("express");
-const rook = require("rookout");
+const rookout = require("rookout");
 const app = express();
 const port = 3000;
+
+rookout.start({
+  token: "f8e6cbdb53547f225d21e8bbde9f3a95dcfeda9746645a0d131f8c58cb6aa327"
+});
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
